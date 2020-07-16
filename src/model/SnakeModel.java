@@ -7,11 +7,45 @@ package model;
  */
 public interface SnakeModel {
 
+  /**
+   * Is this game over?
+   * @return true if game is over, false otherwise.
+   */
   boolean isGameOver();
 
+  /**
+   * Finds current length of the snake.
+   * @return an int length.
+   */
   int length();
 
+  /**
+   * Turn the snake so it faces up.
+   * (does nothing if snake is facing down)
+   */
   void turnUp();
 
+  /**
+   * Turn the snake so it faces right.
+   * (does nothing if snake is facing left)
+   */
+  void turnRight();
+
+  /**
+   * Turn the snake so it faces down.
+   * (does nothing if snake is facing up)
+   */
+  void turnDown();
+
+  /**
+   * Turn the snake so it faces left.
+   * (does nothing if snake is facing right)
+   */
+  void turnLeft();
+
+  /**
+   * Creates a new food on the board.
+   */
+  void newFood();
 
 }
