@@ -1,33 +1,39 @@
 package model;
 
 
+import java.util.List;
 import java.util.Random;
+
+import view.IViewModel;
 
 /**
  * Implememtation of the SnakeModel interface.
  */
-public class SnakeModelImpl implements SnakeModel {
+public class SnakeModelImpl implements SnakeModel, IViewModel {
 
   private final int width;
   private final int height;
 
-  private Snake snake;
+  public Snake snake;
 
   private Cell food;
 
   private Random rand;
 
+  private boolean over;
+
   public SnakeModelImpl(int w, int h) {
     this.width = w;
     this.height = h;
-    this.snake = new Snake();
+    this.snake = new Snake(this);
     this.rand = new Random();
     this.newFood();
+    this.over = false;
   }
 
   @Override
   public boolean isGameOver() {
-    return false;
+    return this.over;
   }
 
   @Override
@@ -67,8 +73,10 @@ public class SnakeModelImpl implements SnakeModel {
     }
   }
 
-  @Override
-  public void newFood() {
+  /**
+   * Creates a new food on the board.
+   */
+  private void newFood() {
     int foodX = rand.nextInt(this.width);
     int foodY = rand.nextInt(this.height);
     Cell f = new Cell(foodX, foodY);
@@ -77,5 +85,35 @@ public class SnakeModelImpl implements SnakeModel {
     } else {
       this.food = f;
     }
+  }
+
+  @Override
+  public void endGame() {
+    this.over = true;
+  }
+
+  @Override
+  public List<Cell> getSnake() {
+    return this.snake.getAllCells();
+  }
+
+  @Override
+  public Cell getFood() {
+    return this.food;
+  }
+
+  @Override
+  public int getWidth() {
+    return this.width;
+  }
+
+  @Override
+  public int getHeight() {
+    return this.height;
+  }
+
+  @Override
+  public void advance() {
+    this.snake.moveForward();
   }
 }

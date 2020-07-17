@@ -18,11 +18,14 @@ public class Snake {
   // INVARIANT: body.length() == this.length
   private List<Cell> body;
 
-  public Snake() {
+  private SnakeModel model;
+
+  public Snake(SnakeModel model) {
     this.heading = Heading.Right;
     this.head = new Cell(2, 2);
     this.body = new ArrayList<Cell>();
     this.length = 1;
+    this.model = model;
   }
 
   /**
@@ -89,7 +92,17 @@ public class Snake {
    * Ends the game. Should be called if the snake runs into itself or a wall.
    */
   protected void endGame() {
-    // might need a reference to the model
+    this.model.endGame();
+  }
+
+  /**
+   * All of the cells that make up this snake.
+   * @return a list of Cells.
+   */
+  public List<Cell> getAllCells() {
+    List<Cell> cells = this.body;
+    cells.add(this.head);
+    return cells;
   }
 
 }

@@ -43,9 +43,10 @@ public interface SnakeModel {
    */
   void turnLeft();
 
+
   /**
-   * Creates a new food on the board.
+   * Ends the game.
    */
-  void newFood();
+  void endGame();
 
 }
