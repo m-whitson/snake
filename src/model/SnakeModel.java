@@ -58,4 +58,6 @@ public interface SnakeModel {
 
   int getHeight();
 
+  Heading getHeading();
+
 }

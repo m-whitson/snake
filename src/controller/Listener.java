@@ -20,19 +20,19 @@ public class Listener implements KeyListener {
 
   @Override
   public void keyPressed(KeyEvent e) {
-    System.out.println("key");
-    if (e.getKeyCode() == KeyEvent.VK_UP) {
-      this.controller.turnUp();
-    }
-    if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-      this.controller.turnRight();
-    }
-    if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-      this.controller.turnDown();
-    }
-    if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-      this.controller.turnLeft();
-    }
+//    System.out.println("key");
+//    if (e.getKeyCode() == KeyEvent.VK_UP) {
+//      this.controller.turnUp();
+//    }
+//    if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+//      this.controller.turnRight();
+//    }
+//    if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+//      this.controller.turnDown();
+//    }
+//    if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+//      this.controller.turnLeft();
+//    }
   }
 
   @Override

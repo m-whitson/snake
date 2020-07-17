@@ -24,3 +24,8 @@ be listening for a key event. I tried making a new class Listener which implemen
 the controller a Listener object. It would be nice if in the Timer I could call listener.listen() or something
 so that the controller is listening for key events but still advancing the model and still repainting the view,
 but I'm not sure what would go in the body of listen().
+
+7/17:
+World is a part of a Northeastern library so I don't want to use that. My new branch will include a Features
+interface that is implemented by ControllerImpl, and I'm going to change the view so that
+CanvasView implements KeyListener and has a reference of type Features.

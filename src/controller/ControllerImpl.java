@@ -8,23 +8,23 @@ import javax.swing.*;
 import model.SnakeModel;
 import view.SnakeView;
 
-public class ControllerImpl implements Controller { //}, KeyListener {
+public class ControllerImpl implements Controller, Features { //}, KeyListener {
 
   SnakeModel model;
   SnakeView view;
-  Listener listener;
+  //Listener listener;
 
   public ControllerImpl(SnakeModel model, SnakeView view) {
     this.model = model;
     this.view = view;
-    this.listener = new Listener(this);
+    //this.listener = new Listener(this);
 
   }
 
   @Override
   public void run(int speed) {
     Timer timer = new Timer(100 / speed, e -> {
-      this.listener = new Listener(this);
+      //this.listener = new Listener(this);
 
       this.model.advance();
       this.view.repaint();
@@ -36,7 +36,7 @@ public class ControllerImpl implements Controller { //}, KeyListener {
 
   @Override
   public void turnUp() {
-    this.model.advance();
+    this.model.turnUp();
   }
 
   @Override

@@ -6,9 +6,12 @@ import java.awt.event.KeyListener;
 
 import javax.swing.*;
 
-public class CanvasView extends JFrame implements SnakeView {
+import controller.Features;
+
+public class CanvasView extends JFrame implements SnakeView, KeyListener {
 
   private final int scale;
+  private Features controller;
 
 
   public CanvasView(IViewModel model, int scale) {
@@ -32,6 +35,7 @@ public class CanvasView extends JFrame implements SnakeView {
     this.setVisible(true);
     this.pack();
 
+    this.validate();
 
   }
 
@@ -40,4 +44,35 @@ public class CanvasView extends JFrame implements SnakeView {
     super.repaint();
   }
 
+  @Override
+  public void keyTyped(KeyEvent e) {
+    System.out.println("key");
+    if (e.getKeyCode() == KeyEvent.VK_UP) {
+      this.controller.turnUp();
+    }
+    if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
+      this.controller.turnRight();
+    }
+    if (e.getKeyCode() == KeyEvent.VK_DOWN) {
+      this.controller.turnDown();
+    }
+    if (e.getKeyCode() == KeyEvent.VK_LEFT) {
+      this.controller.turnLeft();
+    }
+  }
+
+  @Override
+  public void keyPressed(KeyEvent e) {
+
+  }
+
+  @Override
+  public void keyReleased(KeyEvent e) {
+
+  }
+
+  @Override
+  public void setFeatures(Features f) {
+    this.controller = f;
+  }
 }

@@ -2,22 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc1b304-359e-4173-9167-a6f4a0416cf4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/Listener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Features.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/CanvasDraw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/CellTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ModelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/SnakeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/controller/ControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/controller/ControllerImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/controller/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/controller/Listener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/snake/model/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/model/Snake.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/snake/model/SnakeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/model/SnakeModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/model/SnakeModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/model/SnakeModelImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/snake/view/CanvasView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/view/CanvasView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/view/IViewModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/view/IViewModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/view/SnakeView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/view/SnakeView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake.iml" beforeDir="false" afterPath="$PROJECT_DIR$/snake.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Listener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Snake.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/SnakeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SnakeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SnakeModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SnakeModelImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/CanvasView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CanvasView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/IViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/IViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/SnakeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/SnakeView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +53,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -63,7 +75,7 @@
       <recent name="controller" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SnakeTest.testContains">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="snake" />
@@ -77,9 +89,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ModelTest.testGetHeading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="snake" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ModelTest" />
+      <option name="METHOD_NAME" value="testGetHeading" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModelTest.testGetSnakeAndAdvance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="snake" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ModelTest" />
+      <option name="METHOD_NAME" value="testGetSnakeAndAdvance" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SnakeTest.testContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="snake" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SnakeTest" />
+      <option name="METHOD_NAME" value="testContains" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SnakeTest.testGetHeading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="snake" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SnakeTest" />
+      <option name="METHOD_NAME" value="testGetHeading" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SnakeTest.testContains" />
+        <item itemvalue="JUnit.SnakeTest.testGetHeading" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ModelTest.testGetSnakeAndAdvance" />
+        <item itemvalue="JUnit.ModelTest.testGetHeading" />
       </list>
     </recent_temporary>
   </component>
@@ -93,7 +149,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594931450676</updated>
-      <workItem from="1594931451826" duration="17216000" />
+      <workItem from="1594931451826" duration="23395000" />
     </task>
     <servers />
   </component>
@@ -101,38 +157,69 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser" timestamp="1594955742800">
+    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser" timestamp="1595001613059">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="696" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1594948574615" />
-    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser/0.23.1440.828@0.23.1440.828" timestamp="1594955742800" />
+    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser/0.23.1440.828@0.23.1440.828" timestamp="1595001613059" />
     <state x="547" y="355" width="460" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594955630133">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="547" y="355" width="460" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.828@0.23.1440.828" timestamp="1594955630133" />
-    <state width="1189" height="74" key="GridCell.Tab.0.bottom" timestamp="1594954917382">
+    <state width="952" height="256" key="GridCell.Tab.0.bottom" timestamp="1595011787822">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594949076044" />
-    <state width="1189" height="74" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1594954917382" />
-    <state width="1189" height="74" key="GridCell.Tab.0.center" timestamp="1594954917382">
+    <state width="952" height="256" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1595011787822" />
+    <state width="952" height="256" key="GridCell.Tab.0.center" timestamp="1595011787821">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594949076043" />
-    <state width="1189" height="74" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1594954917382" />
-    <state width="1189" height="74" key="GridCell.Tab.0.left" timestamp="1594954917381">
+    <state width="952" height="256" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1595011787821" />
+    <state width="952" height="256" key="GridCell.Tab.0.left" timestamp="1595011787821">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594949076042" />
-    <state width="1189" height="74" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1594954917381" />
-    <state width="1189" height="74" key="GridCell.Tab.0.right" timestamp="1594954917382">
+    <state width="952" height="256" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1595011787821" />
+    <state width="952" height="256" key="GridCell.Tab.0.right" timestamp="1595011787822">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594949076043" />
-    <state width="1189" height="74" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1594954917382" />
+    <state width="952" height="256" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1595011787822" />
+    <state width="952" height="266" key="GridCell.Tab.1.bottom" timestamp="1595011311383">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="952" height="266" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1595011311383" />
+    <state width="952" height="266" key="GridCell.Tab.1.center" timestamp="1595011311382">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="952" height="266" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1595011311382" />
+    <state width="952" height="266" key="GridCell.Tab.1.left" timestamp="1595011311382">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="952" height="266" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1595011311382" />
+    <state width="952" height="266" key="GridCell.Tab.1.right" timestamp="1595011311382">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="952" height="266" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1595011311382" />
+    <state x="647" y="353" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1595000271682">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="647" y="353" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.828@0.23.1440.828" timestamp="1595000271682" />
     <state x="548" y="175" width="670" height="676" key="search.everywhere.popup" timestamp="1594941478012">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="548" y="175" width="670" height="676" key="search.everywhere.popup/0.23.1440.828@0.23.1440.828" timestamp="1594941478012" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/ModelTest.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

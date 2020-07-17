@@ -22,7 +22,10 @@ public class SnakeModelImpl implements SnakeModel, IViewModel {
 
   private boolean over;
 
-  public SnakeModelImpl(int w, int h) {
+  public SnakeModelImpl(int w, int h) throws IllegalArgumentException {
+    if (w < 1 || h < 1) {
+      throw new IllegalArgumentException("invalid field size");
+    }
     this.width = w;
     this.height = h;
     this.snake = new Snake(this);
@@ -110,6 +113,11 @@ public class SnakeModelImpl implements SnakeModel, IViewModel {
   @Override
   public int getHeight() {
     return this.height;
+  }
+
+  @Override
+  public Heading getHeading() {
+    return this.snake.getHeading();
   }
 
   @Override

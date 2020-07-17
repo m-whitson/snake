@@ -1,13 +1,16 @@
 package model;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.swing.*;
 
 /**
  * Represents the actual snake in the game. Contains getter methods and void methods
  * which control the snake's movement.
  */
-public class Snake {
+public class Snake extends JComponent {
 
   private Heading heading;
 
@@ -24,6 +27,10 @@ public class Snake {
     this.heading = Heading.Right;
     this.head = new Cell(2, 2);
     this.body = new ArrayList<Cell>();
+//    this.body.add(new Cell(4, 2));
+//    this.body.add(new Cell(3, 2));
+//    this.body.add(new Cell(2, 2));
+//    this.body.add(new Cell(1, 2));
     this.length = 1;
     this.model = model;
   }
@@ -41,6 +48,7 @@ public class Snake {
    */
   public void face(Heading newHeading) {
     this.heading = newHeading;
+    repaint();
   }
 
   /**
@@ -87,8 +95,8 @@ public class Snake {
       // snake runs into itself
       this.endGame();
     } else {
-      this.body.add(this.head);
       this.body.remove(0);
+      this.body.add(this.head);
       this.head = newCell;
     }
   }
@@ -108,6 +116,11 @@ public class Snake {
     List<Cell> cells = this.body;
     cells.add(this.head);
     return cells;
+  }
+
+  public void paintComponent(Graphics g) {
+    super.paintComponent(g);
+
   }
 
 }
