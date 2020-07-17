@@ -2,6 +2,8 @@ package main;
 
 import javax.swing.*;
 
+import controller.Controller;
+import controller.ControllerImpl;
 import model.Snake;
 import model.SnakeModel;
 import model.SnakeModelImpl;
@@ -16,15 +18,18 @@ public class Main {
 
     int speed = 2;
 
-    IViewModel model = new SnakeModelImpl(70, 40);
-    SnakeView view = new CanvasView(model, 10, speed);
+    SnakeModel model = new SnakeModelImpl(70, 40);
+    SnakeView view = new CanvasView((IViewModel)model, 10);
+    Controller controller = new ControllerImpl(model, view);
 
-    Timer timer = new Timer(100 / speed, e -> {
-      model.advance();
-      view.repaint();
-    });
+    controller.run(speed);
 
-    timer.start();
+//    Timer timer = new Timer(100 / speed, x -> {
+//      model.advance();
+//      view.repaint();
+//    });
+//
+//    timer.start();
 
   }
 }

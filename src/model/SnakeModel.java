@@ -49,4 +49,13 @@ public interface SnakeModel {
    */
   void endGame();
 
+  /**
+   * Moves the snake forward.
+   */
+  void advance();
+
+  int getWidth();
+
+  int getHeight();
+
 }

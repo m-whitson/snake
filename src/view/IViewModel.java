@@ -19,6 +19,5 @@ public interface IViewModel {
 
   int getHeight();
 
-  void advance();
 
 }

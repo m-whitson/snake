@@ -77,6 +77,11 @@ public class Snake {
     if (this.heading == Heading.Up) {
       nextY--;
     }
+    if (nextX < 0 || nextY < 0 ||
+            nextX == this.model.getWidth() || nextY == this.model.getHeight()) {
+      // snake runs into a wall
+      this.endGame();
+    }
     Cell newCell = new Cell(nextX, nextY);
     if (this.body.contains(newCell)) {
       // snake runs into itself

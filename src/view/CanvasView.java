@@ -1,21 +1,20 @@
 package view;
 
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 import javax.swing.*;
 
 public class CanvasView extends JFrame implements SnakeView {
 
-//  private int tick;
   private final int scale;
-  private final int ticksPerSecond;
 
 
-  public CanvasView(IViewModel model, int scale, int ticksPerSecond) {
+  public CanvasView(IViewModel model, int scale) {
     super();
 
     this.scale = scale;
-    this.ticksPerSecond = ticksPerSecond;
 
     int scaledWidth = model.getWidth() * scale;
     int scaledHeight = model.getHeight() * scale;
@@ -29,17 +28,9 @@ public class CanvasView extends JFrame implements SnakeView {
     field.setPreferredSize(new Dimension(scaledWidth, scaledHeight));
     this.add(field);
 
-//    this.tick = 0;
-
-//    Timer timer = new Timer(1000 / this.ticksPerSecond, e -> {
-//      repaint();
-//      tick++;
-//    });
 
     this.setVisible(true);
     this.pack();
-
-//    timer.start();
 
 
   }
@@ -47,7 +38,6 @@ public class CanvasView extends JFrame implements SnakeView {
   @Override
   public void repaint() {
     super.repaint();
-    //repaint();
   }
 
 }
