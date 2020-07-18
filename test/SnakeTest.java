@@ -49,13 +49,33 @@ public class SnakeTest {
 
   @Test
   public void testContains() {
-    List<Cell> list = snake.getAllCells();
-    assertEquals(list.get(0), new Cell(2, 2));
     assertTrue(snake.contains(new Cell(2, 2)));
     assertFalse(snake.contains(new Cell(3, 2)));
     assertFalse(snake.contains(new Snake(model)));
     assertFalse(snake.contains(model));
     assertFalse(snake.contains("a"));
+  }
+
+  @Test
+  public void testMoveForward() {
+    assertTrue(snake.contains(new Cell(2, 2)));
+    assertFalse(snake.contains(new Cell(3, 2)));
+    assertEquals(snake.getAllCells().size(), 1);
+    snake.moveForward();
+    assertFalse(snake.contains(new Cell(2, 2)));
+    assertTrue(snake.contains(new Cell(3, 2)));
+    assertEquals(snake.getAllCells().size(), 1);
+  }
+
+  @Test
+  public void testGetAllCells() {
+    List<Cell> cells = snake.getAllCells();
+    assertEquals(cells.size(), 1);
+    assertEquals(cells.get(0), new Cell(2, 2));
+    snake.moveForward();
+    List<Cell> cells2 = snake.getAllCells();
+    assertEquals(cells2.size(), 1);
+    assertEquals(cells2.get(0), new Cell(3, 2));
 
   }
 }

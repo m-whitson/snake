@@ -26,6 +26,11 @@ so that the controller is listening for key events but still advancing the model
 but I'm not sure what would go in the body of listen().
 
 7/17:
-World is a part of a Northeastern library so I don't want to use that. My new branch will include a Features
+World is a part of a Northeastern library, so I don't want to use that. My new branch will include a Features
 interface that is implemented by ControllerImpl, and I'm going to change the view so that
 CanvasView implements KeyListener and has a reference of type Features.
+
+The timer is now located in controller.run(). When I run the main method the view seems to be working
+correctly, but nothing happens when I press any keys. I went back through and added tests for the model
+which all pass, and now I'll work on testing the controller. I'm going to review how to test using a 
+mock because I think the issue is likely happening here.

@@ -64,7 +64,7 @@ public class Snake extends JComponent {
    * @return true if o is a cell that the snake contains.
    */
   public boolean contains(Object o) {
-    return this.head.equals(o) && this.body.contains(o);
+    return this.head.equals(o) || this.body.contains(o);
   }
 
   /**
@@ -95,8 +95,10 @@ public class Snake extends JComponent {
       // snake runs into itself
       this.endGame();
     } else {
-      this.body.remove(0);
-      this.body.add(this.head);
+      if (this.length > 1) {
+        this.body.remove(0);
+        this.body.add(this.head);
+      }
       this.head = newCell;
     }
   }
@@ -113,7 +115,7 @@ public class Snake extends JComponent {
    * @return a list of Cells.
    */
   public List<Cell> getAllCells() {
-    List<Cell> cells = this.body;
+    List<Cell> cells = new ArrayList<Cell>(this.body);
     cells.add(this.head);
     return cells;
   }

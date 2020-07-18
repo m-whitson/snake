@@ -2,30 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc1b304-359e-4173-9167-a6f4a0416cf4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/Features.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/CanvasDraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/CellTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ModelTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/SnakeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/MockModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/controller/ControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/controller/ControllerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/controller/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/controller/Listener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/snake/model/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/model/Snake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/model/SnakeModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/model/SnakeModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/model/SnakeModelImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/model/SnakeModelImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/view/CanvasView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/view/CanvasView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/view/SnakeView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/view/SnakeView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake.iml" beforeDir="false" afterPath="$PROJECT_DIR$/snake.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ControllerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/snake/SnakeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/snake/SnakeTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Snake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SnakeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SnakeModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/SnakeModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SnakeModelImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/CanvasView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CanvasView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/SnakeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/SnakeView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SnakeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SnakeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +59,7 @@
       <recent name="controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SnakeTest.testContains">
+  <component name="RunManager" selected="JUnit.All in snake">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="snake" />
@@ -89,12 +73,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ModelTest.testGetHeading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in snake" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="snake" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ModelTest" />
-      <option name="METHOD_NAME" value="testGetHeading" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,21 +91,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SnakeTest.testContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SnakeTest.testGetAllCells" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="snake" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SnakeTest" />
-      <option name="METHOD_NAME" value="testContains" />
+      <option name="METHOD_NAME" value="testGetAllCells" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SnakeTest.testGetHeading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SnakeTest.testMoveForward" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="snake" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SnakeTest" />
-      <option name="METHOD_NAME" value="testGetHeading" />
+      <option name="METHOD_NAME" value="testMoveForward" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SnakeTest.testContains" />
-        <item itemvalue="JUnit.SnakeTest.testGetHeading" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in snake" />
         <item itemvalue="JUnit.ModelTest.testGetSnakeAndAdvance" />
-        <item itemvalue="JUnit.ModelTest.testGetHeading" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SnakeTest.testGetAllCells" />
+        <item itemvalue="JUnit.SnakeTest.testMoveForward" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594931450676</updated>
-      <workItem from="1594931451826" duration="23395000" />
+      <workItem from="1594931451826" duration="25965000" />
     </task>
     <servers />
   </component>
@@ -157,35 +139,39 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser" timestamp="1595001613059">
+    <state x="246" y="138" width="794" height="627" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595032530880">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="246" y="138" width="794" height="627" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.828@0.23.1440.828" timestamp="1595032530880" />
+    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser" timestamp="1595033369005">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="696" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1594948574615" />
-    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser/0.23.1440.828@0.23.1440.828" timestamp="1595001613059" />
+    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser/0.23.1440.828@0.23.1440.828" timestamp="1595033369005" />
     <state x="547" y="355" width="460" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594955630133">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="547" y="355" width="460" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.828@0.23.1440.828" timestamp="1594955630133" />
-    <state width="952" height="256" key="GridCell.Tab.0.bottom" timestamp="1595011787822">
+    <state width="1055" height="146" key="GridCell.Tab.0.bottom" timestamp="1595033290919">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594949076044" />
-    <state width="952" height="256" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1595011787822" />
-    <state width="952" height="256" key="GridCell.Tab.0.center" timestamp="1595011787821">
+    <state width="1055" height="146" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1595033290919" />
+    <state width="1055" height="146" key="GridCell.Tab.0.center" timestamp="1595033290918">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594949076043" />
-    <state width="952" height="256" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1595011787821" />
-    <state width="952" height="256" key="GridCell.Tab.0.left" timestamp="1595011787821">
+    <state width="1055" height="146" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1595033290918" />
+    <state width="1055" height="146" key="GridCell.Tab.0.left" timestamp="1595033290917">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594949076042" />
-    <state width="952" height="256" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1595011787821" />
-    <state width="952" height="256" key="GridCell.Tab.0.right" timestamp="1595011787822">
+    <state width="1055" height="146" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1595033290917" />
+    <state width="1055" height="146" key="GridCell.Tab.0.right" timestamp="1595033290919">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594949076043" />
-    <state width="952" height="256" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1595011787822" />
+    <state width="1055" height="146" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1595033290919" />
     <state width="952" height="266" key="GridCell.Tab.1.bottom" timestamp="1595011311383">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
