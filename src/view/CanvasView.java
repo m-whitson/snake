@@ -1,6 +1,7 @@
 package view;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -8,7 +9,11 @@ import java.awt.event.KeyListener;
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicComboBoxUI;
 
+import controller.Controller;
+import controller.ControllerImpl;
 import controller.Features;
+import model.SnakeModel;
+import model.SnakeModelImpl;
 
 public class CanvasView extends JFrame implements SnakeView {
 
@@ -16,6 +21,8 @@ public class CanvasView extends JFrame implements SnakeView {
   private Features controller;
   private IViewModel model;
   private Field field;
+  private JPanel panel;
+  private JLabel lengthField;
 
 
   public CanvasView(IViewModel model, int scale) {
@@ -35,7 +42,15 @@ public class CanvasView extends JFrame implements SnakeView {
 
     field.setPreferredSize(new Dimension(scaledWidth, scaledHeight));
     this.add(field);
-    this.add(new JPanel(), BorderLayout.SOUTH);
+
+    this.panel = new JPanel();
+    this.panel.setLayout(new FlowLayout(FlowLayout.LEFT));
+    this.panel.setPreferredSize(new Dimension(scaledWidth, 35));
+    this.panel.add(new JLabel("length: "));
+    this.lengthField = new JLabel("1");
+    this.panel.add(lengthField);
+
+    this.add(this.panel, BorderLayout.SOUTH);
     this.field.requestFocusInWindow();
     this.addKeyListener(this.field);
     this.setVisible(true);
@@ -48,11 +63,6 @@ public class CanvasView extends JFrame implements SnakeView {
   @Override
   public void repaint() {
     super.repaint();
-//    this.field = new Field(this.model, this.scale, this.controller);
-//    this.field.repaint();
-//    this.setVisible(true);
-//    this.pack();
-//    this.validate();
   }
 
   @Override
@@ -64,5 +74,39 @@ public class CanvasView extends JFrame implements SnakeView {
   @Override
   public void setModel(IViewModel m) {
     this.model = m;
+    this.lengthField.setText(String.valueOf(m.getSnake().size()));
+    this.pack();
+    this.validate();
+  }
+
+  @Override
+  public void gameOver() {
+
+    JButton tryAgain = new JButton("New Game");
+    tryAgain.addActionListener((ActionEvent e) -> {
+
+      SnakeModel tempModel = new SnakeModelImpl(this.model.getWidth(), this.model.getHeight());
+      SnakeView tempView = new CanvasView((IViewModel)tempModel, 10);
+      Controller tempController = new ControllerImpl(tempModel, tempView);
+      tempView.setFeatures((Features)tempController);
+      tempController.run(this.controller.getSpeed());
+
+
+    });
+
+    JLabel empty = new JLabel("        ");
+
+    JLabel gameOver = new JLabel("GAME OVER");
+
+
+    if (this.panel.getComponentCount() < 3) {
+      this.panel.add(empty);
+      this.panel.add(gameOver);
+      this.panel.add(tryAgain);
+      this.pack();
+      this.validate();
+    }
+
+
   }
 }

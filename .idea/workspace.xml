@@ -1,25 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="snake:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9bc1b304-359e-4173-9167-a6f4a0416cf4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/CanvasViewTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/MockView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/snake_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/controller/ControllerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/controller/ControllerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/model/Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/model/Snake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/view/CanvasView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/view/CanvasView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/view/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/view/Field.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/snake/view/SnakeView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/snake/view/SnakeView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/META-INF/snake.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/controller/Controller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/controller/ControllerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/controller/Features.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/controller/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/model/Cell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/model/Heading.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/model/Snake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/model/SnakeModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/model/SnakeModelImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/view/CanvasDraw.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/view/CanvasView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/view/Field.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/view/IViewModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/snake/view/SnakeView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/snake/CanvasViewTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/snake/CellTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/snake/ControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/snake/MockModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/snake/MockView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/snake/ModelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/snake/SnakeTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ControllerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Features.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Features.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Snake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SnakeModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SnakeModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SnakeModelImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/SnakeModelImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/CanvasView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CanvasView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/SnakeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/SnakeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/MockModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MockModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MockView.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MockView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ModelTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +88,9 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
@@ -69,7 +98,7 @@
       <recent name="controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JAR Application.snake.jar">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="snake" />
@@ -93,20 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModelTest.testGetFood" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="snake" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SnakeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="snake" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SnakeTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ModelTest" />
+      <option name="METHOD_NAME" value="testGetFood" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,13 +142,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="snake.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/snake_jar/snake.jar" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.snake.jar" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ModelTest.testGetFood" />
         <item itemvalue="JUnit.CanvasViewTest.testKeyPressed" />
         <item itemvalue="JUnit.SnakeTest.testMoveForward" />
-        <item itemvalue="JUnit.SnakeTest" />
-        <item itemvalue="JUnit.ControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +166,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594931450676</updated>
-      <workItem from="1594931451826" duration="39609000" />
+      <workItem from="1594931451826" duration="45967000" />
     </task>
     <servers />
   </component>
@@ -153,35 +178,39 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="246" y="138" width="794" height="627" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.828@0.23.1440.828" timestamp="1595032530880" />
-    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser" timestamp="1595185406570">
+    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser" timestamp="1595200826270">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="696" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1594948574615" />
-    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser/0.23.1440.828@0.23.1440.828" timestamp="1595185406570" />
+    <state x="696" y="150" key="#com.intellij.ide.util.MemberChooser/0.23.1440.828@0.23.1440.828" timestamp="1595200826270" />
+    <state x="718" y="234" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1595202099304">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="718" y="234" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.828@0.23.1440.828" timestamp="1595202099304" />
     <state x="547" y="355" width="460" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594955630133">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="547" y="355" width="460" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.828@0.23.1440.828" timestamp="1594955630133" />
-    <state width="1055" height="176" key="GridCell.Tab.0.bottom" timestamp="1595187152858">
+    <state width="991" height="208" key="GridCell.Tab.0.bottom" timestamp="1595202161263">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1594949076044" />
-    <state width="1055" height="176" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1595187152858" />
-    <state width="1055" height="176" key="GridCell.Tab.0.center" timestamp="1595187152858">
+    <state width="991" height="208" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1595202161263" />
+    <state width="991" height="208" key="GridCell.Tab.0.center" timestamp="1595202161263">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1594949076043" />
-    <state width="1055" height="176" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1595187152858" />
-    <state width="1055" height="176" key="GridCell.Tab.0.left" timestamp="1595187152858">
+    <state width="991" height="208" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1595202161263" />
+    <state width="991" height="208" key="GridCell.Tab.0.left" timestamp="1595202161262">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1594949076042" />
-    <state width="1055" height="176" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1595187152858" />
-    <state width="1055" height="176" key="GridCell.Tab.0.right" timestamp="1595187152858">
+    <state width="991" height="208" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1595202161262" />
+    <state width="991" height="208" key="GridCell.Tab.0.right" timestamp="1595202161263">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1398" height="214" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1594949076043" />
-    <state width="1055" height="176" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1595187152858" />
+    <state width="991" height="208" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1595202161263" />
     <state width="1055" height="266" key="GridCell.Tab.1.bottom" timestamp="1595183943265">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
@@ -198,10 +227,10 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1055" height="266" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1595183943264" />
-    <state x="196" y="90" key="SettingsEditor" timestamp="1595091924955">
+    <state x="394" y="23" width="1024" height="828" key="SettingsEditor" timestamp="1595202142606">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="196" y="90" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1595091924955" />
+    <state x="394" y="23" width="1024" height="828" key="SettingsEditor/0.23.1440.828@0.23.1440.828" timestamp="1595202142606" />
     <state x="647" y="353" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1595000271682">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
@@ -214,11 +243,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/ModelTest.java</url>
-          <line>122</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/test/ControllerTest.java</url>
           <line>29</line>

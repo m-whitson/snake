@@ -22,6 +22,8 @@ public class SnakeModelImpl implements SnakeModel, IViewModel {
 
   private boolean over;
 
+  private int length;
+
   public SnakeModelImpl(int w, int h) throws IllegalArgumentException {
     if (w < 1 || h < 1) {
       throw new IllegalArgumentException("invalid field size");
@@ -79,7 +81,7 @@ public class SnakeModelImpl implements SnakeModel, IViewModel {
   /**
    * Creates a new food on the board.
    */
-  private void newFood() {
+  public void newFood() {
     int foodX = rand.nextInt(this.width);
     int foodY = rand.nextInt(this.height);
     Cell f = new Cell(foodX, foodY);
@@ -87,12 +89,19 @@ public class SnakeModelImpl implements SnakeModel, IViewModel {
       this.newFood();
     } else {
       this.food = f;
+      this.snake.setFood(f);
     }
+  }
+
+  @Override
+  public int getLength() {
+    return this.snake.getLength();
   }
 
   @Override
   public void endGame() {
     this.over = true;
+
   }
 
   @Override

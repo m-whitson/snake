@@ -10,4 +10,6 @@ public interface SnakeView {
 
   void setModel(IViewModel m);
 
+  void gameOver();
+
 }

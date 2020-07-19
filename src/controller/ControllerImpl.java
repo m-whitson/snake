@@ -13,6 +13,7 @@ public class ControllerImpl implements Controller, Features { //}, KeyListener {
 
   SnakeModel model;
   SnakeView view;
+  int speed;
 
   public ControllerImpl(SnakeModel model, SnakeView view) {
     this.model = model;
@@ -22,15 +23,28 @@ public class ControllerImpl implements Controller, Features { //}, KeyListener {
 
   @Override
   public void run(int speed) {
-    Timer timer = new Timer(100 / speed, e -> {
 
-      this.model.advance();
-      this.view.repaint();
+    this.speed = speed;
+
+    Timer timer = new Timer(100 / speed, x -> {
+      if (!this.model.isGameOver()) {
+        model.advance();
+        view.setModel((IViewModel)model);
+        view.repaint();
+      } else {
+        view.gameOver();
+      }
+
 
     });
 
     timer.start();
 
+  }
+
+  @Override
+  public int getSpeed() {
+    return this.speed;
   }
 
   @Override
@@ -52,5 +66,7 @@ public class ControllerImpl implements Controller, Features { //}, KeyListener {
   public void turnLeft() {
     this.model.turnLeft();
   }
+
+
 
 }

@@ -128,6 +128,11 @@ public class ModelTest {
 
   }
 
+//  @Test
+//  public void testGetFood() {
+//    assertEquals(model.getFood().getX(), new Cell(1,1).getX());
+//  }
+
 
 
 

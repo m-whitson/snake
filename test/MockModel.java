@@ -69,6 +69,16 @@ public class MockModel implements SnakeModel, IViewModel {
   }
 
   @Override
+  public void newFood() {
+
+  }
+
+  @Override
+  public int getLength() {
+    return 0;
+  }
+
+  @Override
   public int getWidth() {
     this.log.append("getWidth");
     return 0;

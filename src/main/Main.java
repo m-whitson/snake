@@ -24,17 +24,17 @@ public class Main {
     Controller controller = new ControllerImpl(model, view);
     view.setFeatures((Features)controller);
 
-//    controller.run(speed);
+    controller.run(speed);
 
-    Timer timer = new Timer(100 / speed, x -> {
-      //view.repaint();
-      model.advance();
-      view.setModel((IViewModel)model);
-      view.repaint();
-
-    });
-
-    timer.start();
+//    Timer timer = new Timer(100 / speed, x -> {
+//      //view.repaint();
+//      model.advance();
+//      view.setModel((IViewModel)model);
+//      view.repaint();
+//
+//    });
+//
+//    timer.start();
 
   }
 }

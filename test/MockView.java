@@ -22,4 +22,10 @@ public class MockView implements SnakeView {
   public void setModel(IViewModel m) {
 
   }
+
+  @Override
+  public void gameOver() {
+
+  }
+
 }

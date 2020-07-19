@@ -33,6 +33,7 @@ public class Field extends JPanel implements KeyListener {
   @Override
   public void paintComponent(Graphics g) {
     this.snake = this.model.getSnake();
+    this.food = this.model.getFood();
 
     super.paintComponent(g);
     this.setBackground(Color.BLACK);

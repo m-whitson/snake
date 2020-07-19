@@ -23,16 +23,15 @@ public class Snake extends JComponent {
 
   private SnakeModel model;
 
+  private Cell food;
+
   public Snake(SnakeModel model) {
     this.heading = Heading.Right;
     this.head = new Cell(2, 2);
     this.body = new ArrayList<Cell>();
-    this.body.add(new Cell(2, 3));
-    this.body.add(new Cell(2, 4));
-    this.body.add(new Cell(2, 5));
-    this.body.add(new Cell(2, 6));
-    this.length = 5;
+    this.length = 1;
     this.model = model;
+
   }
 
   /**
@@ -85,22 +84,33 @@ public class Snake extends JComponent {
     if (this.heading == Heading.Up) {
       nextY--;
     }
-    if (nextX < 0 || nextY < 0 ||
+    if (nextX == -1 || nextY == -1 ||
             nextX == this.model.getWidth() || nextY == this.model.getHeight()) {
       // snake runs into a wall
       this.endGame();
+      return;
     }
     Cell newCell = new Cell(nextX, nextY);
     if (this.body.contains(newCell)) {
       // snake runs into itself
       this.endGame();
     } else {
+
+      // snake gets the food!
+      if (newCell.equals(this.food)) {
+        this.length += 5;
+        this.model.newFood();
+        this.food = this.model.getFood();
+      }
+
       if (this.length > 1) {
-        this.body.remove(0);
+        if (this.body.size() >= this.length) {
+          this.body.remove(0);
+        }
         this.body.add(this.head);
       }
       this.head = newCell;
-      //System.out.println(this.head.getX() + " " + this.head.getY());
+
     }
 
 
@@ -127,5 +137,10 @@ public class Snake extends JComponent {
     super.paintComponent(g);
 
   }
+
+  public void setFood(Cell c) {
+    this.food = c;
+  }
+
 
 }

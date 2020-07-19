@@ -10,4 +10,6 @@ public interface Features {
 
   void turnLeft();
 
+  int getSpeed();
+
 }

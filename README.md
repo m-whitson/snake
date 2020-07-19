@@ -46,3 +46,8 @@ in paintComponent(). The key listeners are still not working but at least it's m
 
 It WORKS I just had to call view.addKeyListener(field). Now the snake can move around using the keys,
 next I'll work on having it grow in length when it eats food.
+
+I just had to add an if statement to make it grow. I'm adding a JPanel to display the length of the snake
+and have a new game button appear once the game ends. I'm probably done for now, I'm going to make this into
+a JAR. I might add stuff to the main method so that the user can adjust the width, length, scale, and speed
+through the run configurations or add more tests later.

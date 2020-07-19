@@ -60,4 +60,9 @@ public interface SnakeModel {
 
   Heading getHeading();
 
+  Cell getFood();
+
+  void newFood();
+
+  int getLength();
 }
