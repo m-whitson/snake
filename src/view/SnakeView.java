@@ -8,4 +8,6 @@ public interface SnakeView {
 
   void setFeatures(Features f);
 
+  void setModel(IViewModel m);
+
 }

@@ -27,11 +27,11 @@ public class Snake extends JComponent {
     this.heading = Heading.Right;
     this.head = new Cell(2, 2);
     this.body = new ArrayList<Cell>();
-//    this.body.add(new Cell(4, 2));
-//    this.body.add(new Cell(3, 2));
-//    this.body.add(new Cell(2, 2));
-//    this.body.add(new Cell(1, 2));
-    this.length = 1;
+    this.body.add(new Cell(2, 3));
+    this.body.add(new Cell(2, 4));
+    this.body.add(new Cell(2, 5));
+    this.body.add(new Cell(2, 6));
+    this.length = 5;
     this.model = model;
   }
 
@@ -100,7 +100,10 @@ public class Snake extends JComponent {
         this.body.add(this.head);
       }
       this.head = newCell;
+      //System.out.println(this.head.getX() + " " + this.head.getY());
     }
+
+
   }
 
   /**

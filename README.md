@@ -34,3 +34,15 @@ The timer is now located in controller.run(). When I run the main method the vie
 correctly, but nothing happens when I press any keys. I went back through and added tests for the model
 which all pass, and now I'll work on testing the controller. I'm going to review how to test using a 
 mock because I think the issue is likely happening here.
+
+I made a mock view too and all the controller tests pass so it is actually calling the model. Still
+nothing happens when I press any keys.
+
+7/19:
+I finally figured out why the model was advancing but the view wasn't changing! In Field the snake field
+is assigned by calling this.model.getSnake() in the constructor, so it is a List<Cell> as it exists at the beginning, 
+but that list does not get update as the model advances, so I added this.snake = this.model.getSnake();
+in paintComponent(). The key listeners are still not working but at least it's moving again.
+
+It WORKS I just had to call view.addKeyListener(field). Now the snake can move around using the keys,
+next I'll work on having it grow in length when it eats food.
