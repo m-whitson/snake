@@ -51,3 +51,12 @@ I just had to add an if statement to make it grow. I'm adding a JPanel to displa
 and have a new game button appear once the game ends. I'm probably done for now, I'm going to make this into
 a JAR. I might add stuff to the main method so that the user can adjust the width, length, scale, and speed
 through the run configurations or add more tests later.
+
+7/22:
+After playing the game for a few days I have noticed a couple bugs / things to improve.
+1) The length counter is not accurate (should increment by 5, but goes from 1 to 7).
+2) Sometimes the food will appear beneath the snake, so there is a bug in the newFood() method.
+3) Hitting the New Game button does not close the previous window.
+4) Changes in width, height, or scale in the main method do not translate to a new game. 
+5) The snake starts moving right as soon as the game as launched, it would be better to wait for the 
+   user to input a direction.

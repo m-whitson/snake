@@ -54,15 +54,33 @@ public interface SnakeModel {
    */
   void advance();
 
+  /**
+   * @return the width of this model.
+   */
   int getWidth();
 
+  /**
+   * @return the height of this model.
+   */
   int getHeight();
 
+  /**
+   * @return the Heading of this model at the current moment.
+   */
   Heading getHeading();
 
+  /**
+   * @return the Cell where the food is currently located.
+   */
   Cell getFood();
 
+  /**
+   * Reassigns the food field to a new Cell in the Field (which is not already part of the Snake)
+   */
   void newFood();
 
+  /**
+   * @return the current length of the Snake.
+   */
   int getLength();
 }

@@ -36,12 +36,12 @@ public class Field extends JPanel implements KeyListener {
     this.food = this.model.getFood();
 
     super.paintComponent(g);
-    this.setBackground(Color.BLACK);
+    this.setBackground(Color.GRAY);
 
-    g.setColor(Color.ORANGE);
+    g.setColor(Color.DARK_GRAY);
     g.fillRect(this.food.getX() * scale, this.food.getY() * scale, scale, scale);
 
-    g.setColor(Color.WHITE);
+    g.setColor(Color.LIGHT_GRAY);
     for (Cell c: this.snake) {
       g.fillRect(c.getX() * scale, c.getY() * scale, scale, scale);
     }

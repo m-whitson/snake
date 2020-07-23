@@ -18,7 +18,7 @@ public class Snake extends JComponent {
 
   private int length;
 
-  // INVARIANT: body.length() == this.length
+  // INVARIANT: body.length() = this.length
   private List<Cell> body;
 
   private SnakeModel model;

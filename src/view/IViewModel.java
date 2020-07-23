@@ -11,12 +11,26 @@ import model.Snake;
  */
 public interface IViewModel {
 
+  /**
+   * Returns all the cells that make up the Snake object.
+   * @return a List<Cell> </Cell> representing the Snaie.
+   */
   List<Cell> getSnake();
 
+  /**
+   * Returns the food at the current moment.
+   * @return the Cell where the food is located.
+   */
   Cell getFood();
 
+  /**
+   * @return the width of this model.
+   */
   int getWidth();
 
+  /**
+   * @return the height of this model.
+   */
   int getHeight();
 
 

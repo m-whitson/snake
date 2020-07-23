@@ -9,7 +9,7 @@ import model.SnakeModel;
 import view.IViewModel;
 import view.SnakeView;
 
-public class ControllerImpl implements Controller, Features { //}, KeyListener {
+public class ControllerImpl implements Controller, Features {
 
   SnakeModel model;
   SnakeView view;
