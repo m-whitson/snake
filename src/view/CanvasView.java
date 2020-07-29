@@ -82,10 +82,11 @@ public class CanvasView extends JFrame implements SnakeView {
     tryAgain.addActionListener((ActionEvent e) -> {
 
       SnakeModel tempModel = new SnakeModelImpl(this.model.getWidth(), this.model.getHeight());
-      SnakeView tempView = new CanvasView((IViewModel)tempModel, 10);
+      SnakeView tempView = new CanvasView((IViewModel)tempModel, this.scale);
       Controller tempController = new ControllerImpl(tempModel, tempView);
       tempView.setFeatures((Features)tempController);
       tempController.run(this.controller.getSpeed());
+      this.dispose();
 
 
     });

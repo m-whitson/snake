@@ -36,12 +36,12 @@ public class Field extends JPanel implements KeyListener {
     this.food = this.model.getFood();
 
     super.paintComponent(g);
-    this.setBackground(Color.GRAY);
+    this.setBackground(Color.BLACK);
 
-    g.setColor(Color.DARK_GRAY);
+    g.setColor(Color.ORANGE);
     g.fillRect(this.food.getX() * scale, this.food.getY() * scale, scale, scale);
 
-    g.setColor(Color.LIGHT_GRAY);
+    g.setColor(Color.WHITE);
     for (Cell c: this.snake) {
       g.fillRect(c.getX() * scale, c.getY() * scale, scale, scale);
     }
@@ -50,33 +50,34 @@ public class Field extends JPanel implements KeyListener {
 
   @Override
   public void keyTyped(KeyEvent e) {
-    //System.out.println("typed");
   }
 
   @Override
   public void keyPressed(KeyEvent e) {
     int code = e.getKeyCode();
-    //System.out.println("pressed");
     this.turn(code);
   }
 
   @Override
   public void keyReleased(KeyEvent e) {
-    //System.out.println("released");
   }
 
   public void turn(int code) {
     if (code == KeyEvent.VK_UP) {
       this.controller.turnUp();
+      this.model.start();
     }
     if (code == KeyEvent.VK_RIGHT) {
       this.controller.turnRight();
+      this.model.start();
     }
     if (code == KeyEvent.VK_DOWN) {
       this.controller.turnDown();
+      this.model.start();
     }
     if (code == KeyEvent.VK_LEFT) {
       this.controller.turnLeft();
+      this.model.start();
     }
   }
 

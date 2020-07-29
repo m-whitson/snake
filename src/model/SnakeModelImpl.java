@@ -21,8 +21,7 @@ public class SnakeModelImpl implements SnakeModel, IViewModel {
   private Random rand;
 
   private boolean over;
-
-  private int length;
+  private boolean started;
 
   public SnakeModelImpl(int w, int h) throws IllegalArgumentException {
     if (w < 1 || h < 1) {
@@ -34,6 +33,7 @@ public class SnakeModelImpl implements SnakeModel, IViewModel {
     this.rand = new Random();
     this.newFood();
     this.over = false;
+    this.started = false;
   }
 
   @Override
@@ -85,7 +85,7 @@ public class SnakeModelImpl implements SnakeModel, IViewModel {
     int foodX = rand.nextInt(this.width);
     int foodY = rand.nextInt(this.height);
     Cell f = new Cell(foodX, foodY);
-    if (this.snake.contains(f)) {
+    if (this.snake.containsCell(f)) {
       this.newFood();
     } else {
       this.food = f;
@@ -125,12 +125,19 @@ public class SnakeModelImpl implements SnakeModel, IViewModel {
   }
 
   @Override
+  public void start() {
+    this.started = true;
+  }
+
+  @Override
   public Heading getHeading() {
     return this.snake.getHeading();
   }
 
   @Override
   public void advance() {
-    this.snake.moveForward();
+    if (this.started) {
+      this.snake.moveForward();
+    }
   }
 }

@@ -49,21 +49,21 @@ public class SnakeTest {
 
   @Test
   public void testContains() {
-    assertTrue(snake.contains(new Cell(2, 2)));
-    assertFalse(snake.contains(new Cell(3, 2)));
-    assertFalse(snake.contains(new Snake(model)));
-    assertFalse(snake.contains(model));
-    assertFalse(snake.contains("a"));
+    assertTrue(snake.containsCell(new Cell(2, 2)));
+    assertFalse(snake.containsCell(new Cell(3, 2)));
+    //assertFalse(snake.contains(new Snake(model)));
+    //assertFalse(snake.contains(model));
+    //assertFalse(snake.contains("a"));
   }
 
   @Test
   public void testMoveForward() {
-    assertTrue(snake.contains(new Cell(2, 2)));
-    assertFalse(snake.contains(new Cell(3, 2)));
+    assertTrue(snake.containsCell(new Cell(2, 2)));
+    assertFalse(snake.containsCell(new Cell(3, 2)));
     assertEquals(snake.getAllCells().size(), 1);
     snake.moveForward();
-    assertFalse(snake.contains(new Cell(2, 2)));
-    assertTrue(snake.contains(new Cell(3, 2)));
+    assertFalse(snake.containsCell(new Cell(2, 2)));
+    assertTrue(snake.containsCell(new Cell(3, 2)));
     assertEquals(snake.getAllCells().size(), 1);
   }
 

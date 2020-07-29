@@ -26,7 +26,7 @@ public class Snake extends JComponent {
   private Cell food;
 
   public Snake(SnakeModel model) {
-    this.heading = Heading.Right;
+    this.heading = null;
     this.head = new Cell(2, 2);
     this.body = new ArrayList<Cell>();
     this.length = 1;
@@ -57,13 +57,14 @@ public class Snake extends JComponent {
     return this.length;
   }
 
+
   /**
-   * Is the given object part of this snake?
-   * @param o the given object.
-   * @return true if o is a cell that the snake contains.
+   * Is the given cell part of this snake?
+   * @param c the given cell.
+   * @return true if c is a cell that the snake contains.
    */
-  public boolean contains(Object o) {
-    return this.head.equals(o) || this.body.contains(o);
+  public boolean containsCell(Cell c) {
+    return this.head.equals(c) || this.body.contains(c);
   }
 
   /**
@@ -104,10 +105,10 @@ public class Snake extends JComponent {
       }
 
       if (this.length > 1) {
+        this.body.add(this.head);
         if (this.body.size() >= this.length) {
           this.body.remove(0);
         }
-        this.body.add(this.head);
       }
       this.head = newCell;
 

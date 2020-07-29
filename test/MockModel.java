@@ -91,6 +91,11 @@ public class MockModel implements SnakeModel, IViewModel {
   }
 
   @Override
+  public void start() {
+
+  }
+
+  @Override
   public Heading getHeading() {
     this.log.append("getHeading");
     return Heading.Right;

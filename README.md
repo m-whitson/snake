@@ -60,3 +60,16 @@ After playing the game for a few days I have noticed a couple bugs / things to i
 4) Changes in width, height, or scale in the main method do not translate to a new game. 
 5) The snake starts moving right as soon as the game as launched, it would be better to wait for the 
    user to input a direction.
+   
+7/29:
+I fixed issue 1 by adding the head to the body before removing a cell from the tail. This makes the snake
+actually be the right size. The counter wasn't inaccurate, the moveForward() method was incorrect.
+I'm not sure the contains() method in Snake actually overrode contains() correctly, so I rewrote it to 
+containsCell(Cell c). The tests still pass, but it is difficult to directly test newFood(). I close
+the previous window by adding this.dispose() to the gameOver() method in CanvasView. Changes are now
+translated to the new game by calling this.model.getWidth(), this.model.getHeight(), and this.scale.
+I added a private boolean started to SnakeModelImpl. Then I added a void method start() to IViewModel,
+which is called as soon as an arrow key is pressed in Field. moveForward() isn't called until started is 
+true. I also changed the snake constructor so that heading is initialized to null, so the first move can be
+in any direction.
+   

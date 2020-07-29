@@ -33,5 +33,7 @@ public interface IViewModel {
    */
   int getHeight();
 
+  void start();
+
 
 }
