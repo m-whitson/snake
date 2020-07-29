@@ -17,7 +17,7 @@ public class Main {
     int speed = 2;
 
     SnakeModel model = new SnakeModelImpl(70, 40);
-    SnakeView view = new CanvasView((IViewModel)model, 15);
+    SnakeView view = new CanvasView((IViewModel)model, 12);
     Controller controller = new ControllerImpl(model, view);
     view.setFeatures((Features)controller);
 
